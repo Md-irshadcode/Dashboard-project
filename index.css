@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.dashboard img {
+    width: 40px;
+    height: 40px;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+
+#sidebar {
+    background-color: #4169E1;
+    color: white;
+    min-height: 100vh;
+}
+
+.dashboard {
+    display: flex;
+    padding: 20px;        
+    gap: 12px;
+    justify-content: flex-start;   
+    font-size: 18px;
+    align-items: center;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+.navigation {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.navigation #upper {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    height: auto;
+    gap: 8px;
+}
+
+.navigation #lower {
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 18vh;
+    gap: 8px;
+}
+
+#upper li, #lower li {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 20px;
+}
+
+.right-side {
+    display: grid;
+    justify-items: end;
+}
+
+.search {
+    display: flex;
+    gap: 8px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.header-title {
+    display: grid;
+    grid-template-columns: 70px 300px;
+    align-items: center;
+}
+
+.header-title img {
+    width: 60px;
+    height: 60px;
+}
+
+#sidebar img {
+    filter: brightness(0) invert(1);
+}
+
+.search-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.search input {
+    padding: 12px;
+    width: 35rem;
+    height: 2.1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #D0D9D9;
+}
+
+.right-side {
+    padding-right: 30px;
+}
+
+.right-upper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.right-upper p {
+    font-weight: 500;
+}
+
+.right-upper .bell-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.right-lower {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 4px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #4169E1;
+    color: white;
+    font-weight: 400;
+}
+
+#body-section {
+    padding: 25px;
+    min-width: 0;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    min-width: 0;
+}
+
+.card {
+    background-color: #E7E7E7;
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 12px;
+    border-left: 5px solid #4169E1;
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 5px 5px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.card-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+#body-section h2 {
+    margin-bottom: 8px;
+}
+
+.body-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-width: 0;
+}
+
+#right-panel {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 25px 25px 25px 0;
+    gap: 20px;
+    align-content: start;
+    min-width: 0;
+}
+
+#announcements, #trending {
+    background-color: #E7E7E7;
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 5px 5px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+#announcements h2, #trending h2 {
+    margin-bottom: 10px;
+}
+
+.announcement-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+.announcement-item h4 {
+    margin-bottom: 4px;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.trending-item:last-child {
+    border-bottom: none;
+}
+
+.trending-item img {
+    width: 40px;
+    height: 40px;
+}
